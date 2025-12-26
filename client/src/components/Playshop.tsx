@@ -11,7 +11,7 @@ import { useState } from "react";
 import { Button } from "@/components/ui/button";
 
 /* ✅ IMPORT ASSET (Vite-safe) */
-import playshopBg from "@/assets/generated_images/abstract_creative_workshop_background.png";
+import playshopBg from "@/assets/abstract_creative_workshop_background-CL8Ozjdq.png";
 
 const CAL_BOOKING_URL = "https://cal.com/james-rxcvpp";
 
