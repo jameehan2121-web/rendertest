@@ -6,14 +6,12 @@ import { fileURLToPath } from "url";
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 
 export default defineConfig({
-  plugins: [
-    react(),
-  ],
+  plugins: [react()],
   resolve: {
     alias: {
       "@": path.resolve(__dirname, "client/src"),        // your main source
       "@shared": path.resolve(__dirname, "shared"),     // shared modules
-      "@assets": path.resolve(__dirname, "dist/public/assets"), // assets now live in dist/public/assets
+      "@assets": path.resolve(__dirname, "client/public/assets"), // source assets
     },
   },
   root: path.resolve(__dirname, "client"),
