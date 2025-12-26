@@ -1,8 +1,10 @@
 import { motion } from "framer-motion";
 import { Award, GraduationCap, Music, Heart, Brain, Sparkles, Lightbulb } from "lucide-react";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
-import yellowDress from "@assets/00345243-26E2-42DD-B766-3E0D6252ABC7_4_5005_c_1764024477904.jpeg";
-
+<img 
+src="/assets/00345243-26E2-42DD-B766-3E0D6252ABC7_4_5005_c_1764024477904.jpeg"
+  alt="About"
+  />
 export default function About() {
   return (
     <section id="about" className="py-24 bg-background relative overflow-hidden">
