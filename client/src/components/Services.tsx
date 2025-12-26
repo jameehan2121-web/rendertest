@@ -11,7 +11,7 @@ import { useState } from "react";
 import { Button } from "@/components/ui/button";
 
 /* ✅ VITE-SAFE IMAGE IMPORT */
-import pianoImage from "@/assets/IMG_0731_1766432484455.jpeg";
+import pianoImage from "@/assets/client/src/assets/IMG_0731_1766432484455-lBM7VaGt.jpeg";
 
 const CAL_BOOKING_URL = "https://cal.com/james-rxcvpp";
 
