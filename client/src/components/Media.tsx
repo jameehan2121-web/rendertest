@@ -1,15 +1,22 @@
 import { motion } from "framer-motion";
 import { Instagram } from "lucide-react";
 
+// Import images properly
+import portrait1 from "@/assets/DB1BE4F6-71A7-42DE-B555-AC5E82E8C3D9_1764025113368.jpeg";
+import portrait2 from "@/assets/D7409145-0B4D-49B5-BA16-34EC241E56EB_4_5005_c_1764025120052.jpeg";
+import portrait3 from "@/assets/9A5332B3-C2A2-4D74-8236-F1593307128C_4_5005_c_1764025137370.jpeg";
+
 export default function Media() {
   return (
     <section id="media" className="py-24 bg-background">
       <div className="container px-6 mx-auto">
+        {/* Header */}
         <div className="text-center mb-16">
           <h2 className="font-serif text-4xl md:text-5xl mb-4">Performance & Highlights</h2>
           <p className="text-muted-foreground">A Glimpse into the Artistic Journey</p>
         </div>
 
+        {/* YouTube & Instagram Section */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -17,7 +24,7 @@ export default function Media() {
           className="mb-20"
         >
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-12">
-            {/* YouTube iframes */}
+            {/* YouTube Video */}
             <div>
               <div className="aspect-video bg-black rounded-xl overflow-hidden shadow-lg border border-border">
                 <iframe 
@@ -33,7 +40,6 @@ export default function Media() {
               </div>
               <p className="mt-2 font-serif text-center text-sm italic text-muted-foreground">Music Video</p>
             </div>
-            {/* Add other iframes here similarly */}
 
             {/* Instagram Card */}
             <div className="bg-card border border-border p-8 rounded-xl shadow-sm text-center flex flex-col justify-center">
@@ -49,6 +55,8 @@ export default function Media() {
                 View on Instagram
               </a>
             </div>
+
+            {/* You can add another card/video here if needed */}
           </div>
 
           {/* Quote */}
@@ -64,21 +72,21 @@ export default function Media() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           <div className="aspect-[3/4] bg-muted overflow-hidden rounded-xl relative group">
             <img 
-              src="/assets/DB1BE4F6-71A7-42DE-B555-AC5E82E8C3D9_1764025113368.jpeg" 
+              src={portrait1} 
               alt="Celeste Portrait 1" 
               className="w-full h-full object-cover hover:scale-105 transition-transform duration-700"
             />
           </div>
           <div className="aspect-[3/4] bg-muted overflow-hidden rounded-xl relative group hidden md:block">
             <img 
-              src="/assets/D7409145-0B4D-49B5-BA16-34EC241E56EB_4_5005_c_1764025120052.jpeg" 
+              src={portrait2} 
               alt="Celeste Portrait 2" 
               className="w-full h-full object-cover hover:scale-105 transition-transform duration-700"
             />
           </div>
           <div className="aspect-[3/4] bg-muted overflow-hidden rounded-xl relative group hidden lg:block">
             <img 
-              src="/assets/9A5332B3-C2A2-4D74-8236-F1593307128C_4_5005_c_1764025137370.jpeg" 
+              src={portrait3} 
               alt="Celeste Portrait 3" 
               className="w-full h-full object-cover hover:scale-105 transition-transform duration-700"
             />
