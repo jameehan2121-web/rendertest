@@ -3,7 +3,7 @@ import { Award, GraduationCap, Music, Heart, Brain, Sparkles, Lightbulb } from "
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 
 // Import your image from src/assets
-import yellowDress from "@/assets/00345243-26E2-42DD-B766-3E0D6252ABC7_4_5005_c_1764024477904.jpeg";
+import yellowDress from "@/assets/00345243-26E2-42DD-B766-3E0D6252ABC7_4_5005_c_1764024477904-DfILqUFH.jpeg";
 
 export default function About() {
   return (
