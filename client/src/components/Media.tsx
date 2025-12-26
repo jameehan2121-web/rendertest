@@ -2,9 +2,9 @@ import { motion } from "framer-motion";
 import { Instagram } from "lucide-react";
 
 // Import images properly
-import portrait1 from "@/assets/DB1BE4F6-71A7-42DE-B555-AC5E82E8C3D9_1764025113368.jpeg";
-import portrait2 from "@/assets/D7409145-0B4D-49B5-BA16-34EC241E56EB_4_5005_c_1764025120052.jpeg";
-import portrait3 from "@/assets/9A5332B3-C2A2-4D74-8236-F1593307128C_4_5005_c_1764025137370.jpeg";
+import portrait1 from "@/assets/DB1BE4F6-71A7-42DE-B555-AC5E82E8C3D9_1764025113368-DWIIjo4H.jpeg";
+import portrait2 from "@/assets/D7409145-0B4D-49B5-BA16-34EC241E56EB_4_5005_c_1764025120052-8NSfch5L.jpeg";
+import portrait3 from "@/assets/9A5332B3-C2A2-4D74-8236-F1593307128C_4_5005_c_1764025137370-CNpUYuqW.jpeg";
 
 export default function Media() {
   return (
