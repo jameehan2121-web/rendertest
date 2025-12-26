@@ -11,9 +11,9 @@ export default defineConfig({
   ],
   resolve: {
     alias: {
-      "@": path.resolve(__dirname, "client/src"),
-      "@shared": path.resolve(__dirname, "shared"),
-      "@assets": path.resolve(__dirname, "attached_assets"),
+      "@": path.resolve(__dirname, "client/src"),        // your main source
+      "@shared": path.resolve(__dirname, "shared"),     // shared modules
+      "@assets": path.resolve(__dirname, "dist/public/assets"), // assets now live in dist/public/assets
     },
   },
   root: path.resolve(__dirname, "client"),
@@ -21,6 +21,9 @@ export default defineConfig({
     outDir: path.resolve(__dirname, "dist/public"),
     emptyOutDir: true,
     base: "/", // ensures assets load correctly
+  },
+  css: {
+    postcss: {}, // will use postcss.config.js automatically
   },
   server: {
     host: "0.0.0.0",
