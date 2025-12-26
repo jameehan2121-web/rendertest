@@ -1,5 +1,4 @@
 import { motion } from "framer-motion";
-import heroImage from "@/assets/1-8f89eb8e.png"; // import the image
 
 export default function Hero() {
   return (
@@ -7,7 +6,7 @@ export default function Hero() {
       <div className="absolute inset-0 z-0">
         <div className="absolute inset-0 bg-gradient-to-b from-primary/0 via-background/0 to-background/20 z-10" />
         <img
-          src={heroImage}
+          src="/assets/1-8f89eb8e.png" // ✅ use public/assets path
           alt="Celeste Chiam"
           className="w-full h-full object-cover object-center opacity-100"
         />

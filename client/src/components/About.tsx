@@ -1,11 +1,6 @@
-import { motion } from "framer-motion";
-import { Award, GraduationCap, Music, Heart, Brain, Sparkles, Lightbulb } from "lucide-react";
-import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
-
-// Import your image from src/assets
-import yellowDress from "@/assets/00345243-26E2-42DD-B766-3E0D6252ABC7_4_5005_c_1764024477904-DfILqUFH.jpeg";
-
 export default function About() {
+  const yellowDress = "/assets/00345243-26E2-42DD-B766-3E0D6252ABC7_4_5005_c_1764024477904-DfILqUFH.jpeg";
+
   return (
     <section id="about" className="py-24 bg-background relative overflow-hidden">
       {/* Decorative background elements */}
@@ -23,7 +18,7 @@ export default function About() {
           >
             <div className="aspect-[3/4] max-w-md w-full bg-muted overflow-hidden rounded-2xl border-4 border-purple-300/50 relative z-10">
               <img
-                src={yellowDress} // ✅ imported image
+                src={yellowDress} // ✅ direct path from public folder
                 alt="Celeste Chiam Portrait"
                 className="w-full h-full object-cover object-top hover:scale-105 transition-transform duration-700"
               />

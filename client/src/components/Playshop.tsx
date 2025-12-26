@@ -10,9 +10,6 @@ import {
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
 
-/* ✅ IMPORT ASSET (Vite-safe) */
-import playshopBg from "@/assets/abstract_creative_workshop_background-CL8Ozjdq.png";
-
 const CAL_BOOKING_URL = "https://cal.com/james-rxcvpp";
 
 const quotes = [
@@ -32,7 +29,7 @@ export default function Playshop() {
       {/* ===== Background ===== */}
       <div className="absolute inset-0 z-0">
         <img
-          src={playshopBg}
+          src="/assets/abstract_creative_workshop_background-CL8Ozjdq.png"
           alt="Creative Playshop Background"
           className="w-full h-full object-cover opacity-10"
         />

@@ -54,6 +54,8 @@ const testimonials = [
   },
 ];
 
+const studentVideoIds = ["J3i4DZYbaMw", "fxGFS-Cr__Y", "TZxsg9K9nYw"];
+
 export default function Testimonials() {
   const [currentIndex, setCurrentIndex] = useState(0);
 
@@ -96,13 +98,12 @@ export default function Testimonials() {
                   transition={{ duration: 0.3 }}
                   className="flex flex-col items-center text-center"
                 >
-                  {/* Stars */}
                   <div className="flex gap-1 mb-6 text-yellow-400">
-                    {Array.from({
-                      length: testimonials[currentIndex].rating,
-                    }).map((_, i) => (
-                      <Star key={i} className="w-6 h-6 fill-current" />
-                    ))}
+                    {Array.from({ length: testimonials[currentIndex].rating }).map(
+                      (_, i) => (
+                        <Star key={i} className="w-6 h-6 fill-current" />
+                      )
+                    )}
                   </div>
 
                   <p className="font-serif text-xl md:text-2xl italic mb-8 leading-relaxed">
@@ -121,7 +122,6 @@ export default function Testimonials() {
               </AnimatePresence>
             </div>
 
-            {/* Controls */}
             <div className="flex justify-center gap-4 mt-8">
               <Button
                 size="icon"
@@ -151,11 +151,7 @@ export default function Testimonials() {
               <span className="flex-1 h-px bg-border" />
             </h3>
 
-            {[
-              "J3i4DZYbaMw",
-              "fxGFS-Cr__Y",
-              "TZxsg9K9nYw",
-            ].map((id) => (
+            {studentVideoIds.map((id) => (
               <div
                 key={id}
                 className="aspect-video rounded-xl overflow-hidden border bg-black relative"

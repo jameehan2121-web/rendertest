@@ -10,9 +10,6 @@ import {
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
 
-/* ✅ VITE-SAFE IMAGE IMPORT */
-import pianoImage from "@/assets/client/src/assets/IMG_0731_1766432484455-lBM7VaGt.jpeg";
-
 const CAL_BOOKING_URL = "https://cal.com/james-rxcvpp";
 
 export default function Services() {
@@ -201,7 +198,7 @@ export default function Services() {
           >
             <div className="aspect-[4/5] rounded-2xl overflow-hidden shadow-2xl relative z-10">
               <img
-                src={pianoImage}
+                src="/assets/IMG_0731_1766432484455-lBM7VaGt.jpeg"
                 alt="Piano Keys Artistic"
                 className="w-full h-full object-cover"
               />

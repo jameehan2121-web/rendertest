@@ -1,11 +1,6 @@
 import { motion } from "framer-motion";
 import { Instagram } from "lucide-react";
 
-// Import images properly
-import portrait1 from "@/assets/DB1BE4F6-71A7-42DE-B555-AC5E82E8C3D9_1764025113368-DWIIjo4H.jpeg";
-import portrait2 from "@/assets/D7409145-0B4D-49B5-BA16-34EC241E56EB_4_5005_c_1764025120052-8NSfch5L.jpeg";
-import portrait3 from "@/assets/9A5332B3-C2A2-4D74-8236-F1593307128C_4_5005_c_1764025137370-CNpUYuqW.jpeg";
-
 export default function Media() {
   return (
     <section id="media" className="py-24 bg-background">
@@ -55,8 +50,6 @@ export default function Media() {
                 View on Instagram
               </a>
             </div>
-
-            {/* You can add another card/video here if needed */}
           </div>
 
           {/* Quote */}
@@ -72,21 +65,21 @@ export default function Media() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           <div className="aspect-[3/4] bg-muted overflow-hidden rounded-xl relative group">
             <img 
-              src={portrait1} 
+              src="/assets/DB1BE4F6-71A7-42DE-B555-AC5E82E8C3D9_1764025113368-DWIIjo4H.jpeg" 
               alt="Celeste Portrait 1" 
               className="w-full h-full object-cover hover:scale-105 transition-transform duration-700"
             />
           </div>
           <div className="aspect-[3/4] bg-muted overflow-hidden rounded-xl relative group hidden md:block">
             <img 
-              src={portrait2} 
+              src="/assets/D7409145-0B4D-49B5-BA16-34EC241E56EB_4_5005_c_1764025120052-8NSfch5L.jpeg" 
               alt="Celeste Portrait 2" 
               className="w-full h-full object-cover hover:scale-105 transition-transform duration-700"
             />
           </div>
           <div className="aspect-[3/4] bg-muted overflow-hidden rounded-xl relative group hidden lg:block">
             <img 
-              src={portrait3} 
+              src="/assets/9A5332B3-C2A2-4D74-8236-F1593307128C_4_5005_c_1764025137370-CNpUYuqW.jpeg" 
               alt="Celeste Portrait 3" 
               className="w-full h-full object-cover hover:scale-105 transition-transform duration-700"
             />
