@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-<img src="/assets/1-8f89eb8e.png" alt="Hero" />
+import heroImage from "@/assets/1-8f89eb8e.png"; // import the image
 
 export default function Hero() {
   return (
